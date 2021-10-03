@@ -1,5 +1,5 @@
-import Pages.Components.CalendarComponent;
-import Pages.RegistrationPage;
+import pages.components.CalendarComponent;
+import pages.RegistrationPage;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
@@ -15,7 +15,7 @@ public class RegistrationTestWithPageObjectAndJavaFaker extends TestBase {
     public void registrationWithPageObjectTest() {
 
         // Params for Jenkins
-        String url = System.getProperty("url", "https://demoqa.com/");
+        String url = System.getProperty("url", "https://demoqa.com/automation-practice-form");
         registrationPage
                 .openPage(url)
                 .setFirstName(testDataFaker.firstName)
@@ -34,4 +34,5 @@ public class RegistrationTestWithPageObjectAndJavaFaker extends TestBase {
                 .chooseDelhiOption()
                 .clickSubmitBtn();
     }
+
 }

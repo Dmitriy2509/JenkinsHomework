@@ -1,4 +1,6 @@
 import com.codeborne.selenide.Configuration;
+import config.CredentialConfig;
+import org.aeonbits.owner.ConfigFactory;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -14,10 +16,17 @@ public class TestBase {
 
         Configuration.browserCapabilities = capabilities;
         Configuration.startMaximized = true;
-        Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub/"; // for connection selenoid
-        // Params for Jenkins
+
+       CredentialConfig credentialConfig =
+                ConfigFactory.create(CredentialConfig.class);
+//        Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub/"; // for connection selenoid
+
+        Configuration.remote = "https://" + credentialConfig.login()+ ":" + credentialConfig.password() + "@selenoid.autotests.cloud/wd/hub/"; // for connection selenoid
+        System.out.println(Configuration.remote);
+//         Params for Jenkins
         String url = System.getProperty("url", "https://demoqa.com/");
     }
+
 
     @AfterEach
     public void tearDown() {
