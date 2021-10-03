@@ -49,3 +49,8 @@ tasks.withType(Test) {
     }
 }
 
+task urlTest(type:Test){
+    useJUnitPlatform(){
+        includeTags("url")
+    }
+}

@@ -1,5 +1,6 @@
 import Pages.Components.CalendarComponent;
 import Pages.RegistrationPage;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 public class RegistrationTestWithPageObjectAndJavaFaker extends TestBase {
@@ -10,6 +11,7 @@ public class RegistrationTestWithPageObjectAndJavaFaker extends TestBase {
 
 
     @Test
+    @Tag("url")
     public void registrationWithPageObjectTest() {
 
         // Params for Jenkins
