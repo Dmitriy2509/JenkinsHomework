@@ -11,8 +11,11 @@ public class RegistrationTestWithPageObjectAndJavaFaker extends TestBase {
 
     @Test
     public void registrationWithPageObjectTest() {
+
+        // Params for Jenkins
+        String url = System.getProperty("url", "https://demoqa.com/");
         registrationPage
-                .openPage()
+                .openPage(url)
                 .setFirstName(testDataFaker.firstName)
                 .setLastName(testDataFaker.lastName)
                 .setEmail(testDataFaker.email)

@@ -31,6 +31,11 @@ public class RegistrationPage {
         return this;
     }
 
+    public RegistrationPage openPage(String url) {
+        open(url);
+        return this;
+    }
+
     public RegistrationPage setFirstName(String firstName) {
         firstNameField.setValue(firstName);
         return this;

@@ -14,9 +14,9 @@ compileTestJava {
     options.encoding = 'UTF-8'
 }
 
-allure{
+allure {
     version = "2.15.0"
-    autoconfigure =true
+    autoconfigure = true
     aspectjweaver = true
     configuration = "testImplementation"
 
@@ -26,17 +26,18 @@ allure{
 }
 
 dependencies {
-    testImplementation (
+    testImplementation(
             "org.aspectj:aspectjweaver:1.9.6",
             "com.codeborne:selenide:5.20.3",
             "io.qameta.allure:allure-selenide:2.15.0",
             "org.junit.jupiter:junit-jupiter:5.7.1")
-    testRuntimeOnly ("org.junit.jupiter:junit-jupiter-engine:5.7.1",
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.7.1",
             "org.slf4j:slf4j-simple:1.7.29")
     implementation 'com.github.javafaker:javafaker:1.0.2'
 }
 
 tasks.withType(Test) {
+    systemProperties(System.getProperties())// Needs to use properties
     useJUnitPlatform()
 
     testLogging {
@@ -47,3 +48,4 @@ tasks.withType(Test) {
         }
     }
 }
+
