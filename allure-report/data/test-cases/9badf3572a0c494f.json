@@ -1,0 +1,96 @@
+{
+  "uid" : "9badf3572a0c494f",
+  "name" : "registrationWithPageObjectTest()",
+  "fullName" : "RegistrationTestWithPageObjectAndJavaFaker.registrationWithPageObjectTest",
+  "historyId" : "c8e1e141aff473a8ead5d8f23a98649d",
+  "time" : {
+    "start" : 1633264172935,
+    "stop" : 1633264192572,
+    "duration" : 19637
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "14eb4de416657ef3",
+      "name" : "Last screenshot",
+      "source" : "14eb4de416657ef3.png",
+      "type" : "image/png",
+      "size" : 179430
+    }, {
+      "uid" : "d14ce50c95d9de5d",
+      "name" : "Page source",
+      "source" : "d14ce50c95d9de5d.html",
+      "type" : "text/plain",
+      "size" : 45527
+    }, {
+      "uid" : "c5f4a964e7b8ca6f",
+      "name" : "Browser console logs",
+      "source" : "c5f4a964e7b8ca6f.bin",
+      "type" : "text/plain",
+      "size" : 0
+    }, {
+      "uid" : "46dd815ab3bde096",
+      "name" : "Video",
+      "source" : "46dd815ab3bde096.html",
+      "type" : "text/html",
+      "size" : 193
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "url"
+  }, {
+    "name" : "junit.platform.uniqueid",
+    "value" : "[engine:junit-jupiter]/[class:RegistrationTestWithPageObjectAndJavaFaker]/[method:registrationWithPageObjectTest()]"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-I64PMK4"
+  }, {
+    "name" : "thread",
+    "value" : "10184@DESKTOP-I64PMK4.Test worker(14)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "RegistrationTestWithPageObjectAndJavaFaker"
+  }, {
+    "name" : "testClass",
+    "value" : "RegistrationTestWithPageObjectAndJavaFaker"
+  }, {
+    "name" : "testMethod",
+    "value" : "registrationWithPageObjectTest"
+  }, {
+    "name" : "suite",
+    "value" : "RegistrationTestWithPageObjectAndJavaFaker"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "url" ]
+  },
+  "source" : "9badf3572a0c494f.json",
+  "parameterValues" : [ ]
+}

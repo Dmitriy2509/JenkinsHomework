@@ -1,0 +1,39 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "OwnerTest",
+    "children" : [ {
+      "name" : "credentialTest",
+      "uid" : "828badecc8142fd1",
+      "parentUid" : "21c424a0c1e5aacab6e5b9cc868ffdf8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1633263965768,
+        "stop" : 1633263965837,
+        "duration" : 69
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "21c424a0c1e5aacab6e5b9cc868ffdf8"
+  }, {
+    "name" : "RegistrationTestWithPageObjectAndJavaFaker",
+    "children" : [ {
+      "name" : "registrationWithPageObjectTest",
+      "uid" : "21efe9f39afd4a5b",
+      "parentUid" : "dd6a8640ded55b7dafbb0b79781f4cfb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1633265373711,
+        "stop" : 1633265397164,
+        "duration" : 23453
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "dd6a8640ded55b7dafbb0b79781f4cfb"
+  } ]
+}

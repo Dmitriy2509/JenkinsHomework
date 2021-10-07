@@ -1,0 +1,21 @@
+[ {
+  "uid" : "828badecc8142fd1",
+  "name" : "credentialTest()",
+  "time" : {
+    "start" : 1633263965768,
+    "stop" : 1633263965837,
+    "duration" : 69
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "21efe9f39afd4a5b",
+  "name" : "registrationWithPageObjectTest()",
+  "time" : {
+    "start" : 1633265373711,
+    "stop" : 1633265397164,
+    "duration" : 23453
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

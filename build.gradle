@@ -56,3 +56,14 @@ task urlTest(type:Test){
         //gradle clean urlTest -Durl=https://website
     }
 }
+
+/*
+java  \
+"-DprojectName=PROJECT_NAME" \
+"-Denv=ENVIRONMENT" \
+"-DreportLink=BUILD_URL" \
+"-Dcomm=Any comment here" \
+"-Dconfig.file=src/test/resources/notifications/telegram.json" \
+-jar allure-notifications-3.1.2.jar
+
+*/
