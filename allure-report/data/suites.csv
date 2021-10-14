@@ -1,3 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Thu Oct 07 17:02:16 EEST 2021","Thu Oct 07 17:02:44 EEST 2021","27283","","RegistrationTestWithPageObjectAndJavaFaker","","RegistrationTestWithPageObjectAndJavaFaker","registrationWithPageObjectTest","registrationWithPageObjectTest()",""
-"passed","Thu Oct 07 17:02:15 EEST 2021","Thu Oct 07 17:02:16 EEST 2021","72","","OwnerTest","","OwnerTest","credentialTest","credentialTest()",""
