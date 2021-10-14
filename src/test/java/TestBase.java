@@ -24,7 +24,7 @@ public class TestBase {
 //        Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub/"; // for connection selenoid
 
 //        Configuration.remote = "https://" + credentialConfig.login()+ ":" + credentialConfig.password() + "@selenoid.autotests.cloud/wd/hub/"; // for connection selenoid
-        String url = System.getProperty("remoteUrl", "selenoid.autotests.cloud/wd/hub/");
+        String url = System.getProperty("url", "selenoid.autotests.cloud/wd/hub/");
         Configuration.remote = format("https://%s:%s@%s", credentialConfig.login(), credentialConfig.password(), url);
         System.out.println(Configuration.remote);
 //         Params for Jenkins
