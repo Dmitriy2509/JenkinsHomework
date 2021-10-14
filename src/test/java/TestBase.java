@@ -5,6 +5,8 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
+import static java.lang.String.format;
+
 public class TestBase {
 
     @BeforeAll
@@ -21,10 +23,12 @@ public class TestBase {
                 ConfigFactory.create(CredentialConfig.class);
 //        Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub/"; // for connection selenoid
 
-        Configuration.remote = "https://" + credentialConfig.login()+ ":" + credentialConfig.password() + "@selenoid.autotests.cloud/wd/hub/"; // for connection selenoid
+//        Configuration.remote = "https://" + credentialConfig.login()+ ":" + credentialConfig.password() + "@selenoid.autotests.cloud/wd/hub/"; // for connection selenoid
+        String url = System.getProperty("remoteUrl", "selenoid.autotests.cloud/wd/hub/");
+        Configuration.remote = format("https://%s:%s@%s", credentialConfig.login(), credentialConfig.password(), url);
         System.out.println(Configuration.remote);
 //         Params for Jenkins
-        String url = System.getProperty("url", "https://demoqa.com/");
+//        String url = System.getProperty("url", "https://demoqa.com/");
     }
 
 

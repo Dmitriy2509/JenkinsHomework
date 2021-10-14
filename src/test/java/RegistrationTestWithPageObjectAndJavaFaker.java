@@ -14,10 +14,8 @@ public class RegistrationTestWithPageObjectAndJavaFaker extends TestBase {
     @Tag("url")
     public void registrationWithPageObjectTest() {
 
-        // Params for Jenkins
-        String url = System.getProperty("url", "https://demoqa.com/automation-practice-form");
         registrationPage
-                .openPage(url)
+                .openPage()
                 .setFirstName(testDataFaker.firstName)
                 .setLastName(testDataFaker.lastName)
                 .setEmail(testDataFaker.email)
